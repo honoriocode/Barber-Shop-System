@@ -13,10 +13,12 @@ print(""" _   _                 _
 |____/ \__,_|_|  |_.__/ \___|_|___|____/|_| |_|\___/| .__/ 
                              |_____|                |_|   """)
 print('**************************************************************')
-
+#Variavéis
 escolha = None
 decorator = '***************************************'
 cadastros = {}
+
+#Menu inicial para escolha do que fazer no sistema
 
 while escolha != '3':
 
@@ -29,7 +31,7 @@ while escolha != '3':
 
     menu()
     escolha = input('Digite o número entre 1, 2 e 3: ')
-
+#Sistema de cadastro de nome de usuário e senha. Sistema de contabilidade acessível após log in
     if escolha == '2':
         while True:
                 nomecad = input('Crie um nome de usuário : ')
