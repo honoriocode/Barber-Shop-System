@@ -50,6 +50,9 @@ while escolha != '3':
         while i != 0:
             user = input('Informe o nome de usuário : ')
             senha = input('Informe a senha : ')
+            if user != cadastros.keys() and senha != cadastros.values():
+                print('Você não se cadastrou no sistema ou a senha/usuário está inválido')
+                break
             if user == cadastros.keys() and senha == cadastros.values():
                 print('Acesso liberado!')
                 print(decorator)
