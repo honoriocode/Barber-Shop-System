@@ -62,14 +62,15 @@ while escolha != '3':
                 valordiario = qtdecortes * valorcorte
                 print(f'Quantidade de cortes realizados no dia : {qtdecortes}')
                 print(f'Valor Total dos cortes realizados no dia : {valordiario}')
+                break
             else:
                 i = i - 1
                 print(f"Usuário ou senha incorretos, você ainda tem {i} tentativas. ")
                 continue
-        print("Demasiadas tentativas incorretas, programa finalizado.")
+        print("Programa finalizado.")
 
         restart = print(input("Você gostaria de reiniciar? Sim/ Não: "))
-        if restart != "não":
+        if restart != "não" or restart != "Não":
             continue
 
 
