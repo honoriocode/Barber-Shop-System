@@ -37,7 +37,7 @@ while escolha != '3':
                 nomecad = input('Crie um nome de usuário : ')
                 senhacad = input('Crie uma senha para cadastro : ')
                 qtde_senha = len(senhacad)
-                if 8 < qtde_senha > 16:
+                if qtde_senha < 8 or qtde_senha > 16:
                     print('Senha inválida! Crie uma senha com no mínimo 8 caracteres')
 
                 else:
@@ -50,10 +50,10 @@ while escolha != '3':
         while i != 0:
             user = input('Informe o nome de usuário : ')
             senha = input('Informe a senha : ')
-            if user != cadastros.keys() and senha != cadastros.values():
+            if user != nomecad and senha != senhacad:
                 print('Você não se cadastrou no sistema ou a senha/usuário está inválido')
                 break
-            if user == cadastros.keys() and senha == cadastros.values():
+            if user == nomecad and senha == senhacad:
                 print('Acesso liberado!')
                 print(decorator)
                 print('Contabilidade Hood Barber_Shop')
